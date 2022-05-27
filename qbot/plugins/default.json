@@ -1,0 +1,16 @@
+{
+    "disabled": false,
+    "json": false,
+    "urls": [
+        "ws://localhost:8081/ws/cq/"
+    ],
+    "event_filter": [],
+    "api_filter": [],
+    "regex_filter": "",
+    "regex_replace": "",
+    "extra_header": {
+        "User-Agent": [
+            "GMC"
+        ]
+    }
+}

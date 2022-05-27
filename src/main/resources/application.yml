@@ -1,0 +1,30 @@
+server:
+  port: 8081
+spring:
+  bot:
+    plugin-list: # 配置插件列表（有序），如果插件返回0，继续执行剩余插件，如果插件返回1，终止剩余插件执行
+      - com.lax.ftbot.qbot.plugin.LogPlugin # 日志插件
+      - com.lax.ftbot.qbot.plugin.MessagePlugin # 测试插件
+      - com.lax.ftbot.qbot.plugin.ImagePlugin # 动态生成图片插件
+      - com.lax.ftbot.qbot.plugin.HelloPlugin # 测试插件
+  datasource:
+    dynamic:
+      primary: ft #设置默认的数据源或者数据源组,默认值即为mysql1
+      strict: false #严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源
+      datasource:
+        ft:
+          url: jdbc:sqlite:C:\IDEAWorkSpace\Spring-Mirai-Server\db\ft.db
+          driver-class-name: org.sqlite.JDBC
+          username:
+          password:
+        xdd:
+          url: jdbc:sqlite:C:\IDEAWorkSpace\Spring-Mirai-Server\db\xdd.db
+          driver-class-name: org.sqlite.JDBC
+          username:
+          password:
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+apkpath: C:/IDEAWorkSpace/unidbg-jd-sign/pack/jd.apk
+sopath: C:/IDEAWorkSpace/unidbg-jd-sign/pack/libjdbitmapkit.so

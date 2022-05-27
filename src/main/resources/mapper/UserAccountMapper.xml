@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lax.ftbot.mapper.UserAccountMapper">
+
+
+    <select id="selectqqIsExist" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM t_user_account WHERE qq = #{qq}
+    </select>
+</mapper>

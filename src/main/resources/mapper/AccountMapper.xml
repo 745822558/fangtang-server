@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lax.ftbot.mapper.AccountMapper">
+
+    <select id="selectQQGroup" resultType="java.lang.String">
+        SELECT QQ from jd_cookies where QQ != '1' GROUP BY QQ
+    </select>
+</mapper>

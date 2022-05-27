@@ -1,0 +1,29 @@
+[2022-05-25 08:53:15] [INFO]: Plugin(default): {"disabled":false,"json":false,"urls":["ws://localhost:8081/ws/cq/"],"event_filter":[],"api_filter":[],"regex_filter":"","regex_replace":"","extra_header":{"User-Agent":["GMC"]}} 
+[2022-05-25 08:53:15] [INFO]: 端口号 9000 
+[2022-05-25 08:53:15] [INFO]: 浏览器打开 http://localhost:9000/ 设置机器人 
+[2022-05-25 08:53:48] [INFO]: 开始初始化设备信息 
+[2022-05-25 08:53:48] [INFO]: 生成随机设备信息 
+[2022-05-25 08:53:48] [INFO]: 使用 device/device-2015003223.json 内的设备信息覆盖设备信息 
+[2022-05-25 08:53:48] [INFO]: 保存设备信息到文件 device/device-2015003223.json 
+[2022-05-25 08:53:48] [INFO]: 设备信息 {"display":"GMC.622569.001","product":"gmc","device":"gmc","board":"gmc","model":"gmc","finger_print":"pbbot/gmc/gmc:10/PBBOT.200324.001/6568000:user/release-keys","boot_id":"54b15bf5-4c75-d415-2ca5-509e9d6f57f1","proc_version":"Linux 5.4.0-54-genericCW8XyX2J (android-build@gmail.com)","protocol":2,"imei":"803542585023393","brand":"pbbot","bootloader":"unknown","base_band":"","version":{"incremental":"5891938","release":"10","codename":"REL","sdk":29},"sim_info":"T-Mobile","os_type":"android","mac_address":"EC:D0:9F:0D:AA:AD","ip_address":[192,168,1,123],"wifi_bssid":"EC:D0:9F:0D:AA:AD","wifi_ssid":"TP-LINK-0D01CE","imsi_md5":"c50ad4d9da01d265d2ef230e68b1ee26","android_id":"d2ec76755b73462d","apn":"wifi","vendor_name":"MIUI","vendor_os_name":"gmc"} 
+[2022-05-25 08:53:48] [INFO]: 创建机器人 2015003223 
+[2022-05-25 08:53:49] [INFO]: 初始化日志 
+[2022-05-25 08:53:49] [INFO]: 登录中... 
+[2022-05-25 08:53:49] [INFO]: MiraiGo -> connect to server: 220.194.118.217:8080 
+[2022-05-25 08:53:50] [ERROR]: MiraiGo -> get self guild profile error: decode packet error: oidb result unsuccessful: 36012 msg: no guild tab 
+[2022-05-25 08:53:50] [INFO]: 登录成功 
+[2022-05-25 08:53:52] [INFO]: 收到服务器地址更新通知, 将在下一次重连时应用.  
+[2022-05-25 08:53:55] [INFO]: 插件加载完成 
+[2022-05-25 08:53:55] [INFO]: 刷新好友列表 
+[2022-05-25 08:53:55] [INFO]: 共加载 5 个好友. 
+[2022-05-25 08:53:55] [INFO]: 刷新群列表 
+[2022-05-25 08:53:56] [INFO]: 共加载 6 个群. 
+[2022-05-25 08:53:56] [INFO]: 开始连接Websocket服务器 [default](ws://localhost:8081/ws/cq/) 
+[2022-05-25 08:53:56] [INFO]: 连接Websocket服务器成功 [default](ws://localhost:8081/ws/cq/) 
+[2022-05-25 10:00:11] [INFO]: Bot(2015003223) Group(787809023) -> 先领169-30券
+https://u.jd.com/JdnZelb
+自营裕道府 当季新米 好味稻香米10斤
+https://u.jd.com/JLnHSuh
+拍5件159.5亓，折3.1/斤
+<image image_id="a275609ebb7b456d3749b2048abe1d33.gif" url="https://gchat.qpic.cn/gchatpic_new/2421413223/787809023-2323557585-A275609EBB7B456D3749B2048ABE1D33/0?term=2"/>
+ 
