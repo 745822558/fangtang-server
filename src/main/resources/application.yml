@@ -13,12 +13,12 @@ spring:
       strict: false #严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源
       datasource:
         ft:
-          url: jdbc:sqlite:C:\IDEAWorkSpace\Spring-Mirai-Server\db\ft.db
+          url: jdbc:sqlite:${ftdb}
           driver-class-name: org.sqlite.JDBC
           username:
           password:
         xdd:
-          url: jdbc:sqlite:C:\IDEAWorkSpace\Spring-Mirai-Server\db\xdd.db
+          url: jdbc:sqlite:${xdddb}
           driver-class-name: org.sqlite.JDBC
           username:
           password:
@@ -26,5 +26,8 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
-apkpath: C:/IDEAWorkSpace/unidbg-jd-sign/pack/jd.apk
-sopath: C:/IDEAWorkSpace/unidbg-jd-sign/pack/libjdbitmapkit.so
+fangTangBotPath: C:\Users\Administrator\Desktop\fangTangBot
+ftdb: ${fangTangBotPath}\db\ft.db
+xdddb: ${fangTangBotPath}\db\xdd.db
+apkpath: ${fangTangBotPath}\jd\jd.apk
+sopath: ${fangTangBotPath}\jd\libjdbitmapkit.so
