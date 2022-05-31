@@ -8,8 +8,8 @@
         <version>2.6.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>net.lz1998</groupId>
-    <artifactId>spring-mirai-server</artifactId>
+    <groupId>com.lax</groupId>
+    <artifactId>fangTang</artifactId>
     <version>1.0</version>
     <name>fangTang</name>
     <description>Demo project for Spring Boot</description>
