@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk-slim
-MAINTAINER yuepong.com
+MAINTAINER fangTang
 ARG JAR_FILE
 WORKDIR /opt
 COPY ${JAR_FILE} app.jar
