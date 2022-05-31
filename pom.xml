@@ -48,7 +48,6 @@
         </dependency>
         <!--sign仓库-->
        <dependency>
-            &lt;!&ndash;            groupId, artifactId, version:描述了依赖的项目唯一标志。&ndash;&gt;
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
