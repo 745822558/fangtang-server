@@ -26,8 +26,8 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
-fangTangBotPath: C:\Users\Administrator\Desktop\fangTangBot
-ftdb: ${fangTangBotPath}\db\ft.db
-xdddb: ${fangTangBotPath}\db\xdd.db
-apkpath: ${fangTangBotPath}\jd\jd.apk
-sopath: ${fangTangBotPath}\jd\libjdbitmapkit.so
+fangTangBotPath: C:/Users/Administrator/Desktop/fangTangBot
+ftdb: ${fangTangBotPath}/db/ft.db
+xdddb: ${fangTangBotPath}/db/xdd.db
+apkpath: ${fangTangBotPath}/jd/jd.apk
+sopath: ${fangTangBotPath}/jd/libjdbitmapkit.so
