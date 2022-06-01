@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lax</groupId>
-    <artifactId>fangTang-Server</artifactId>
+    <artifactId>fangtang-server</artifactId>
     <version>1.0</version>
-    <name>fangTang-Server</name>
+    <name>fangtang-server</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
