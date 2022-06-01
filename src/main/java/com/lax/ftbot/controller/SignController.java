@@ -7,7 +7,10 @@ import com.lax.ftbot.service.SignService;
 import com.lax.ftbot.utils.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/sign")
@@ -18,8 +21,11 @@ public class SignController {
     SignService signService;
 
 
-    @GetMapping
-    public R getSign(@RequestParam String functionId, @RequestBody String body) {
+    @PostMapping
+    public R getSign(String functionId, @RequestBody String body) {
+        log.info("Content-Type: application/json");
+        log.info("请求地址为：sign?functionId=getCcFeedInfo");
+        log.info("body为json格式");
         log.info("functionId:{},body:{}", functionId, body);
         if (StrUtil.isEmpty(functionId) || StrUtil.isEmpty(body)) {
             return R.fail(-1, "参数异常！");
