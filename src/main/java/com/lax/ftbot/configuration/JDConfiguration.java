@@ -29,8 +29,8 @@ public class JDConfiguration {
     public JDVm jdVm() throws IOException {
         JDVm jdVm = new JDVm();
 
-        //AndroidEmulator emulator = AndroidEmulatorBuilder.for32Bit().setProcessName(pkgName).build();
-        AndroidEmulator emulator = AndroidEmulatorBuilder.for64Bit().setProcessName(pkgName).build();
+        AndroidEmulator emulator = AndroidEmulatorBuilder.for32Bit().setProcessName(pkgName).build();
+        //AndroidEmulator emulator = AndroidEmulatorBuilder.for64Bit().setProcessName(pkgName).build();
         final Memory memory = emulator.getMemory();
         memory.setLibraryResolver(new AndroidResolver(23));
         VM vm = emulator.createDalvikVM(new File(apkPath));
