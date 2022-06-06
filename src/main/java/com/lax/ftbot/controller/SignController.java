@@ -1,6 +1,7 @@
 package com.lax.ftbot.controller;
 
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.core.util.URLUtil;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import com.lax.ftbot.service.SignService;
@@ -23,14 +24,14 @@ public class SignController {
 
     @PostMapping
     public R getSign(String functionId, @RequestBody String body) {
-        log.info("Content-Type: application/json");
-        log.info("请求地址为：sign?functionId=getCcFeedInfo");
-        log.info("body为json格式");
-        log.info("functionId:{},body:{}", functionId, body);
         if (StrUtil.isEmpty(functionId) || StrUtil.isEmpty(body)) {
             return R.fail(-1, "参数异常！");
         }
         try {
+            body = URLUtil.decode(body);
+            if (body.indexOf("body=") != -1) {
+                body = body.substring(body.indexOf("body=") + 5);
+            }
             JSONObject jsonObject = JSONUtil.parseObj(body);
         } catch (Exception e) {
             System.out.println(e);
